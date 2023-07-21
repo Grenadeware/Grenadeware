@@ -1,0 +1,122 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F", true))() 
+local Window = Library.CreateLib("Grenadeware", "OceanTheme")
+
+local Tab1 = Window:NewTab("Combat")
+local Tab2 = Window:NewTab("Utility")
+local Tab3 = Window:NewTab("Hubs")
+local Tab4 = Window:NewTab("Credits")
+local Tab5 = Window:NewTab("World")
+
+local Tab1Section = Tab1:NewSection("Combat")
+local Tab2Section = Tab2:NewSection("Utility")
+local Tab3Section = Tab3:NewSection("Hubs")
+local Tab4Section = Tab4:NewSection("Derpy Bread")
+local Tab4Section = Tab4:NewSection("Kavo Ui Library")
+local Tab4Section = Tab4:NewSection("Made by me")
+local Tab4Section = Tab4:NewSection("Made by sonic")
+local Tab4Section = Tab4:NewSection("Made by cocomelon#8792")
+local Tab4Section = Tab4:NewSection("Credits to 0prime")
+local Tab5Section = Tab5:NewSection("World")
+
+Tab2Section:NewToggle("4bigguysexploit v3", "DESTROY MY PRECIOUS", function(state)
+if state then
+if callback then
+task.spawn(function()
+repeat
+task.wait(.1)
+game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("SwordSwingMiss"):FireServer({
+["weapon"] = game:GetService("ReplicatedStorage").Items.diamond_great_hammer,
+["chargeRatio"] = 1
+})
+until not FourBigballs.Enabled
+end)
+end
+end
+})
+end)
+Tab2Section:NewToggle("bounce fly", "bounce and fly", function(state)
+    if state then
+Function = function(callback)
+                            if callback then 
+                                task.spawn(function()
+                game.Workspace.Gravity = 24.025
+                repeat
+                lplr.Character.HumanoidRootPart.Velocity = Vector3.new(0, 5, 0)
+                task.wait(0.4)
+                until (not jumpfly.Enabled)
+                game.Workspace.Gravity = 100
+                                end)
+                            end
+                        end,
+                HoverText = "yes pro"
+                    })
+                end)
+
+    end
+end)
+Tab2Section:NewToggle("maybe full ac disabler", "i forgot if its patched or not", function(state)
+    if state then
+                    if callback then
+                task.spawn(function()
+                   repeat task.wait()
+                local args = {
+                    [1] = {
+                        ["partPositions"] = {
+                            [1] = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame),
+                            [2] = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame),
+                            [3] = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame),
+                            [4] = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame),
+                            [5] = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame),
+                            [6] = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame),
+                            [7] = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame)
+                        },
+                        ["partSize"] = Vector3.new(999999, 0.5, 9999.99999999999999999999)
+                    }
+                }
+
+                game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("SpiritBridgeEnter"):InvokeServer(unpack(args))
+            until not disablerenabled
+               end)
+            end
+        end
+    })
+end)
+    end
+end)
+Tab2Section:NewToggle("antivoid", "no falling", function(state)
+    if state then
+if AntiVoidPart then 
+				AntiVoidPart.CanCollide = val == "Collide"
+			end
+		end,
+		List = {"Normal", "Collide", "Velocity"}
+	})
+	AntiVoidTransparent = AntiVoid.CreateSlider({
+		Name = "Invisible",
+		Min = 1,
+		Max = 100,
+		Default = 50,
+		Function = function(val) 
+			if AntiVoidPart then
+				AntiVoidPart.Transparency = 1 - (val / 100)
+			end
+		end,
+	})
+	AntiVoidColor = AntiVoid.CreateColorSlider({
+		Name = "Color",
+		Function = function(h, s, v) 
+			if AntiVoidPart then
+				AntiVoidPart.Color = Color3.fromHSV(h, s, v)
+			end
+		end
+	})
+end)
+
+runFunction(function()
+	local oldenable2
+	local olddisable2
+	local oldhitblock
+	local blockplacetable2 = {}
+	local blockplaceenabled2 = false
+    end
+end)
