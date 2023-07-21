@@ -1,0 +1,2 @@
+game.StarterGui:SetCore('SendNotification', {Title='Certified Weeb'; Text='Player : '..name..' You are Whitelisted!'})
+a.Text = "Whitelisted!"
